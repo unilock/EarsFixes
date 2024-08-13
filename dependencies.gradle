@@ -34,8 +34,8 @@
  * For more details, see https://docs.gradle.org/8.0.1/userguide/java_library_plugin.html#sec:java_library_configurations_graph
  */
 dependencies {
-    devOnlyNonPublishable(rfg.deobf("com.github.GTNewHorizons:Botania:1.11.3-GTNH:dev"))
-    devOnlyNonPublishable(rfg.deobf("com.github.GTNewHorizons:twilightforest:2.6.31:dev"))
-    devOnlyNonPublishable(rfg.deobf("com.github.GTNewHorizons:WarpTheory:1.4.1-GTNH:dev"))
+    devOnlyNonPublishable("com.github.GTNewHorizons:Botania:1.11.3-GTNH:dev") { transitive = false }
+    devOnlyNonPublishable("com.github.GTNewHorizons:twilightforest:2.6.31:dev") { transitive = false }
+    devOnlyNonPublishable("com.github.GTNewHorizons:WarpTheory:1.4.1-GTNH:dev") { transitive = false }
     devOnlyNonPublishable(rfg.deobf("curse.maven:xaeros-minimap-263420:5060684"))
 }
